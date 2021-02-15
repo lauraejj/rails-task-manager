@@ -1,0 +1,8 @@
+<h1>My tasks </h1>
+<% @tasks.each do |task|%>
+  <% if @completed = false%>
+    <h2><%="[ ] "%><%= task.title%></h2>
+  <%else%>
+    <h2><%="[x] "%><%= task.title%>
+  <%end%>
+<%end%>
